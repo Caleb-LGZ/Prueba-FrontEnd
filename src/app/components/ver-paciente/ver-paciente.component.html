@@ -1,0 +1,22 @@
+<div class="title">
+    <h1>Ver Paciente</h1>
+</div>
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="paciente != null" class="container">
+    <mat-card class="card">
+        <mat-card-title>{{ paciente.primerNombre }} {{paciente.segundoNombre}} {{paciente.primerApellido}} {{paciente.segundoApellido}}</mat-card-title>
+        <mat-card-content>
+            <p><strong>Cedula: </strong>{{paciente.cedulaPaciente}}</p>
+            <p><strong>Correo: </strong>{{paciente.correo}}</p>
+            <p><strong>Telefono: </strong>{{paciente.telefonoPaciente}}</p>
+            <p><strong>Contacto emergencia: </strong>{{paciente.telefonoContacto}}</p>
+            <p><strong>Genero: </strong>{{paciente.genero}}</p>
+            <p><strong>Fecha de Nacimiento: </strong>{{paciente.fechaNacimiento | date: 'mediumDate'}}</p>
+            <p><strong>Edad: </strong> {{edad}} </p>
+            <p><strong>Provincia: </strong>{{paciente.provincia.nombre}}</p>
+            <mat-card-actions>
+                <button routerLink="/listPacientes" mat-raised-button>Volver</button>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
+</div>

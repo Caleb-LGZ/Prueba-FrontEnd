@@ -1,0 +1,61 @@
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .search {
+    cursor: pointer;
+    color:rgb(74, 107, 253);
+  }
+
+  .delete {
+    cursor: pointer;
+    color: #E15639
+  }
+
+  .edit {
+    cursor: pointer;
+    color: #187880
+  }
+
+td, th {
+    width: 15%;
+}
+
+.table-margin {
+  padding-left: 15px;
+}
+
+  .mat-table-responsive table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .mat-table-responsive th,
+  .mat-table-responsive td {
+    padding: 1px; /* Ajusta el padding según tus preferencias */
+  }
+  
+  .mat-table-responsive td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .mat-table-responsive table {
+      width: auto;
+    }
+  
+    .mat-table-responsive th,
+    .mat-table-responsive td {
+      width: auto;
+      flex-grow: 1;
+    }
+  }
+  
+  
+  
+
+
+  
